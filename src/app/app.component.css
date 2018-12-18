@@ -1,0 +1,126 @@
+.formula{
+  border: 1px solid #b0b0b0;
+  padding: 10px;
+}
+
+h4{
+  margin-left: 15px;
+}
+
+textarea{
+  width: 99%;
+  height: 220px;
+  margin-top: -10px;
+}
+
+label{
+  display: inline-block;
+  width: 25%;
+  padding-left: 120px;
+}
+
+.checkbox{
+  margin-left: -100px;
+}
+
+.button_save{
+  display: inline;
+  width: 196px;
+  height: 17px;
+  font-size: 11px;
+}
+
+.container-buttons {
+  display: inline-flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.button_clear{
+  width: 71px;
+  height: 17px;
+  font-size: 11px;
+}
+
+.button_validate{
+  width: 73px;
+  height: 17px;
+  font-size: 11px;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  margin: -8px 0 50px -20px;
+  padding-left: 0;
+}
+
+ul li.hover ,
+ul li:hover {
+  background-color: #58a7ff;
+}
+
+ul li.hover а,
+ul li:hover а {
+  color: #ffffff;
+}
+
+.function{
+  width: 100%;
+  border: 1px solid #b0b0b0;
+ }
+
+.block{
+  display: inline-block;
+  width: 23%;
+  border: 1px solid #b0b0b0;
+  padding: 8px;
+}
+
+.navigation{
+  display: inline-block;
+  overflow: scroll;
+  border: 1px solid #000000;
+  padding: 10px;
+  background-color: white;
+  text-transform: uppercase;
+  width: 90%;
+  height: 265px;
+}
+
+.navigation a {
+  color: #000000;
+  padding: 12px 20px;
+  text-decoration: none;
+}
+
+
+.button_edit{
+  display: inline;
+  width: 99%;
+  height: auto;
+  font-size: 11px;
+}
+
+.img{
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+.button_az{
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin: 3px;
+  background-image: url("../assets/img/sort.gif");
+}
+
+.text_area{
+  width: 99%;
+  height: auto;
+  margin-top: 4px;
+}
+
