@@ -1,3 +1,5 @@
+.element::-webkit-scrollbar { width: 0; }
+
 .formula{
   border: 1px solid #b0b0b0;
   padding: 10px;
@@ -19,6 +21,7 @@ textarea{
   width: 99%;
   height: 220px;
   margin-top: -10px;
+  /*min-width: 960px;*/
 }
 
 label{
@@ -76,6 +79,7 @@ ul li:hover {
 
 .function{
   width: 100%;
+  min-width: 960px;
   border: 1px solid #b0b0b0;
 }
 
@@ -89,7 +93,29 @@ ul li:hover {
 .block{
   vertical-align: top;
   display: inline-block;
-  width: 23%;
+  width: 14%;
+  min-width: 14%;
+  border: 1px solid #b0b0b0;
+  padding: 8px;
+  height: 345px;
+  margin-left: 8px;
+}
+.block1{
+  vertical-align: top;
+  display: inline-block;
+  width: 14%;
+  min-width: 240px;
+  border: 1px solid #b0b0b0;
+  padding: 8px;
+  height: 345px;
+  margin-left: 8px;
+}
+
+.block2{
+  vertical-align: top;
+  display: inline-block;
+  width: 15%;
+  min-width: 240px;
   border: 1px solid #b0b0b0;
   padding: 8px;
   height: 345px;
@@ -115,6 +141,7 @@ ul li:hover {
   background-color: white;
   text-transform: uppercase;
   width: 91%;
+  min-width: 71%;
   height: 282px;
 }
 
@@ -187,6 +214,17 @@ ul li:hover {
   margin-left: -10px;
 }
 
+.block-calculator{
+  vertical-align: top;
+  display: inline-block;
+  width: 330px;
+  border: 1px solid #b0b0b0;
+  padding: 8px;
+  height: 345px;
+  margin-left: 16px;
+  float: right;
+}
+
 table {
   width: 98%;
   border: 0 double #b0b0b0;
@@ -230,12 +268,13 @@ td {
   width: 10%;
   height: 24px ;
   outline: none;
-  border: 0;
   border-radius: 0;
+  text-align:justify;
 }
 
 .button-calculator:focus{
   box-shadow:  0 0 5px #58a7ff;
+
 }
 
 .button-calculator-big{
@@ -244,12 +283,12 @@ td {
   margin-top: 15px;
   width: 23%;
   height: 24px ;
-  border: 0;
   border-radius: 0;
 }
 
 .button-calculator-big:focus{
   box-shadow:  0 0 5px #58a7ff;
+
 }
 
 .button-ok{
@@ -264,18 +303,37 @@ td {
   margin-top: 15px;
   width: 28%;
   height: 25px;
-  border: 0;
   border-radius: 0;
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 1800px) and (min-width: 1000px){
-  .block{
-    vertical-align: top;
-    display: inline-block;
-    width: 24%;
-    border: 1px solid #b0b0b0;
-    padding: 8px;
-    height: 345px;
+/*@media screen and (min-width: 1700px) and (min-width: 1300px) {*/
+  /*.block {*/
+    /*vertical-align: top;*/
+    /*display: inline-block;*/
+    /*width: 23%;*/
+    /*border: 1px solid #b0b0b0;*/
+    /*padding: 8px;*/
+    /*height: 345px;*/
+  /*}*/
+/*}*/
+
+/*@media screen and (min-width: 1330px) and (min-width: 600px){*/
+  /*.block{*/
+    /*vertical-align: top;*/
+    /*display: inline-block;*/
+    /*width: 23%;*/
+    /*border: 1px solid #b0b0b0;*/
+    /*padding: 8px;*/
+    /*height: 345px;*/
+  /*}*/
+/*}*/
+
+@media screen and (max-width: 600px) {
+  table td:before {
+    content: attr(data-label);
+    float: left;
+    text-transform: uppercase;
+    font-weight: bold;
   }
 }
